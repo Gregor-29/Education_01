@@ -1344,41 +1344,8 @@ body {
     margin-bottom: 0.625rem;
   }
 
-  ._spoller-init .spollers__title {
-    font-size: 30px;
-  }
-
-  ._spoller-init .contacts__title:after {
-    font-size: 25px;
-  }
-
-  .contacts__body a {
-    font-size: 1.5625rem;
-  }
-
-  ._spoller-init .social__title:after {
-    font-size: 25px;
-  }
-
-  ._spoller-init .donate__title:after {
-    font-size: 25px;
-  }
-
   .donate__body a {
-    font-size: 28px;
     font-weight: 600;
-  }
-
-  ._spoller-init .banks__title:after {
-    font-size: 25px;
-  }
-
-  .banks__body {
-    font-size: 25px;
-  }
-
-  ._spoller-init .banks-items__title:after {
-    font-size: 25px;
   }
 }
 
