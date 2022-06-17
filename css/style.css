@@ -386,6 +386,7 @@ body {
 }
 
 .spollers__title {
+  outline: none;
   color: #ee4248;
   font-weight: 600;
   line-height: 124%;
