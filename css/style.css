@@ -225,6 +225,10 @@ body {
   font-size: 18px;
 }
 
+.button__small_green {
+  background-color: #02897a;
+}
+
 .header {
   position: relative;
   z-index: 50;
@@ -273,6 +277,9 @@ body {
 }
 
 .header__logo img {
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
   width: 237px;
 }
 
@@ -291,28 +298,36 @@ body {
 }
 
 .menu__list {
+  padding-right: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-@supports ((-moz-column-gap: clamp( 1.875rem , 1.3959580838rem  +  2.3952095808vw , 3.125rem )) or (column-gap: clamp( 1.875rem , 1.3959580838rem  +  2.3952095808vw , 3.125rem ))) {
+@supports ((-moz-column-gap: clamp( 1.25rem , -2.7832824492rem  +  8.4028905944vw , 3.125rem )) or (column-gap: clamp( 1.25rem , -2.7832824492rem  +  8.4028905944vw , 3.125rem ))) {
   .menu__list {
-    -webkit-column-gap: clamp( 1.875rem , 1.3959580838rem  +  2.3952095808vw , 3.125rem );
-       -moz-column-gap: clamp( 1.875rem , 1.3959580838rem  +  2.3952095808vw , 3.125rem );
-            column-gap: clamp( 1.875rem , 1.3959580838rem  +  2.3952095808vw , 3.125rem );
+    -webkit-column-gap: clamp( 1.25rem , -2.7832824492rem  +  8.4028905944vw , 3.125rem );
+       -moz-column-gap: clamp( 1.25rem , -2.7832824492rem  +  8.4028905944vw , 3.125rem );
+            column-gap: clamp( 1.25rem , -2.7832824492rem  +  8.4028905944vw , 3.125rem );
   }
 }
 
-@supports not ((-moz-column-gap: clamp( 1.875rem , 1.3959580838rem  +  2.3952095808vw , 3.125rem )) or (column-gap: clamp( 1.875rem , 1.3959580838rem  +  2.3952095808vw , 3.125rem ))) {
+@supports not ((-moz-column-gap: clamp( 1.25rem , -2.7832824492rem  +  8.4028905944vw , 3.125rem )) or (column-gap: clamp( 1.25rem , -2.7832824492rem  +  8.4028905944vw , 3.125rem ))) {
   .menu__list {
-    -webkit-column-gap: calc(1.875rem + 1.25 * (100vw - 20rem) / 52.1875);
-       -moz-column-gap: calc(1.875rem + 1.25 * (100vw - 20rem) / 52.1875);
-            column-gap: calc(1.875rem + 1.25 * (100vw - 20rem) / 52.1875);
+    -webkit-column-gap: calc(1.25rem + 1.875 * (100vw - 47.99875rem) / 22.31375);
+       -moz-column-gap: calc(1.25rem + 1.875 * (100vw - 47.99875rem) / 22.31375);
+            column-gap: calc(1.25rem + 1.875 * (100vw - 47.99875rem) / 22.31375);
   }
 }
 
 .menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
   font-weight: 400;
   font-size: 18px;
   line-height: 124%;
@@ -320,6 +335,26 @@ body {
   -webkit-transition: 0.3s ease 0s;
   -o-transition: 0.3s ease 0s;
   transition: 0.3s ease 0s;
+}
+
+.menu__link_gitLab {
+  font-weight: 600;
+  color: rgb(235, 91, 13);
+}
+
+.no-webp .menu__link_gitLab::before{
+  background: url("../img/logotip/GitLab.png") 50%/cover no-repeat; }
+
+.menu__link_gitLab::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  right: -70px;
+  width: 110%;
+  height: 200%;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .icon-menu {
@@ -1194,7 +1229,7 @@ body {
     -webkit-transition: left 0.3s ease 0s;
     -o-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
-    padding-top: 6.875rem;
+    padding-top: 8.125rem;
     background-color: rgb(146, 141, 141);
   }
 
@@ -1207,8 +1242,8 @@ body {
     -webkit-transition: right 0.3s ease 0s;
     -o-transition: right 0.3s ease 0s;
     transition: right 0.3s ease 0s;
-    background: rgb(247, 241, 241);
-    height: 5rem;
+    background: #02897a;
+    height: 6.25rem;
   }
 
   .menu-open .menu__body {
@@ -1237,6 +1272,15 @@ body {
     font-size: 28px;
     font-weight: 700;
     color: #fff;
+  }
+
+  .menu__link_gitLab::before {
+    right: -100px;
+  }
+
+  .menu__link_gitLab {
+    font-size: 1.875rem;
+    color: rgb(109, 53, 23);
   }
 
   .icon-menu {
@@ -1367,8 +1411,29 @@ body {
             box-shadow: 0px 0px 3px 3px #02897a;
   }
 
+  .button__small_green:hover {
+    -webkit-box-shadow: 0px 0px 3px 3px #02897a;
+            box-shadow: 0px 0px 3px 3px #02897a;
+  }
+
+  .header__logo img:hover {
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+
   .menu__link:hover {
     color: #ee4248;
+  }
+
+  .menu__link_gitLab:hover {
+    color: #02897a;
+  }
+
+  .menu__link_gitLab:hover::before {
+    -webkit-transform: scale(1.08);
+        -ms-transform: scale(1.08);
+            transform: scale(1.08);
   }
 
   .contacts__body a:hover {
@@ -1395,3 +1460,5 @@ body {
     color: #ee4248;
   }
 }
+
+.webp .menu__link_gitLab::before{ background: url(../img/logotip/GitLab.webp) 50%/cover no-repeat; }
