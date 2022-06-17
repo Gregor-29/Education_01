@@ -130,7 +130,7 @@ h6 {
 }
 
 body {
-  background: url("../img/logotip/logotip.svg") 50% no-repeat;
+  background: url("../img/logotip/logotip.svg") 50%/cover no-repeat;
 }
 
 .lock body {
