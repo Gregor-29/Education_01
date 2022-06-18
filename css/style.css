@@ -580,7 +580,6 @@ body {
 }
 
 .social__items {
-  margin: 0 0 0 -18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1216,6 +1215,10 @@ body {
   .menu__link_gitLab::before {
     -webkit-animation: gitLab 1s infinite ease-in-out alternate 0s;
             animation: gitLab 1s infinite ease-in-out alternate 0s;
+  }
+
+  .social__items {
+    margin: 0 0 0 -18px;
   }
 
   .welcome__image {
