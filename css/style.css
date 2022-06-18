@@ -283,6 +283,8 @@ body {
 }
 
 .header__logotip {
+  position: relative;
+  z-index: 10;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
