@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Главная</title>
+	<title>Roadmap</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<style>
@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20220619135035">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220619175235">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,10 +30,11 @@
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="" target="_blank" class="menu__link">Home</a></li>
-							<li class="menu__item"><a href="" target="_blank" class="menu__link">Roadmap</a></li>
-							<li class="menu__item"><a href="" target="_blank" class="menu__link">Contacts</a></li>
-							<li class="menu__item"><a href="" target="_blank" class="menu__link">Donate</a></li>
+							<li class="menu__item"><a href="../index.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="../roadMap.html" class="menu__link">Roadmap</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Contacts</a>
+							</li>
+							<li class="menu__item"><a href="" class="menu__link">Donate</a></li>
 							<li class="menu__item"><a href="https://gitlab.com/mongodb.tech/site" target="_blank" class="menu__link menu__link_gitLab">GitLab</a></li>
 						</ul>
 					</nav>
@@ -41,106 +42,207 @@
 			</div>
 		</header>
 		<main class="page">
-			<!--====main-slider=================================================================-->
-			<div data-fullscreen class="main-slider">
-				<div class="main-slider__container slider-main">
-					<div class="slider-main__slider swiper">
-						<div class="slider-main__wrapper swiper-wrapper">
-							<div class="slider-main__slide swiper-slide slide-swiper">
-								<section class="slide-swiper__body body-slider">
-									<h1 data-swiper-parallax-x="-100%,px" class="body-slider__title">Making the most of
-										the ever-growing
-										<span>Information Technology</span>
-									</h1>
-									<div data-swiper-parallax-x="-200%,px" class="body-slider__text">Managed by a team
-										of professional experts with
-										extensive experience and impressive track records</div>
-									<a data-swiper-parallax-x="-300%,px" href="" target="_blank" class="body-slider__button button">Read More</a>
-								</section>
-								<div class="slide-swiper__image-ibg_contain">
-									<img src="img/main__slider/03.svg" alt="">
-								</div>
+			<!--=====roadMap================================================================-->
+			<section class="roadMap">
+				<div class="roadMap__container">
+					<h3 class="roadMap__title">Roadmap</h3>
+					<div class="roadMap__items">
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.0.1</div>
+								<div class="item-roadMap__data">31.06.2022</div>
 							</div>
-							<div class="slider-main__slide swiper-slide slide-swiper">
-								<section class="slide-swiper__body body-slider">
-									<h1 data-swiper-parallax-x="-100%,px" class="body-slider__title body-slider__title_green">Making the most of
-										the ever-growing
-										<span>Information Technology</span>
-									</h1>
-									<div data-swiper-parallax-x="-200%,px" class="body-slider__text ">Managed by a team
-										of professional experts with
-										extensive experience and impressive track records</div>
-									<a data-swiper-parallax-x="-300%,px" href="" target="_blank" class="body-slider__button button  button_green">Read More</a>
-								</section>
-								<div class="slide-swiper__image-ibg_contain">
-									<img src="img/main__slider/04.svg" alt="">
-								</div>
+							<div class="item-roadMap__description">First web version with Atlas</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.0.2</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">Web Multi Cloud Atlas</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.0.3</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">Web My Cloud AWS</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.0.4</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">iOS/Andorid Atlas</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.0.5</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">iOS/Andorid Atlas Multi Cloud Atalas and own AWS
 							</div>
 						</div>
-					</div>
-					<div class="main-slider__bullets"></div>
-				</div>
-			</div>
-			<!--====welcom=================================================================-->
-			<div class="welcome">
-				<div data-watch class="welcome__container">
-					<div class="welcome__image image-welcome-ibg">
-						<img src="img/welcome/02.svg" alt="">
-					</div>
-					<div class="welcome__body body-welcom">
-						<div class="body-welcom__title">
-							Welcome to <span>Dwidasa Samsara Indonesia (DSI)</span>
-						</div>
-						<div class="body-welcom__text">
-							<p>Dwidasa Samsara Indonesia (DSI) was firstly established in 2010 by the founders, who each
-								of them has a common end objective to innovate new creations by making the most of the
-								ever-growing information technology through <span>DSI’</span>s distinct front-end based
-								application
-								concept.</p>
-							<p>Managed by a team of professional experts with extensive experience and impressive track
-								records, <span>DSI</span> believes that continuous improvements and innovations assure
-								your business
-								to run effectively and efficiently.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--====product=================================================================-->
-			<section class="product">
-				<div class="product__container">
-					<h2 class="product__title">Product and Service</h2>
-					<div data-watch class="product__items items-product">
-						<div class="items-product__item">
-							<div class="items-product__image-ibg_contain">
-								<img src="img/products/01.svg" alt="">
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.0.6</div>
+								<div class="item-roadMap__data">31.06.2022</div>
 							</div>
-							<div class="items-product__title">Our Product</div>
-							<div class="items-product__text">Our product is made on the base of our team’s careful
-								research and analyses, ranging from internet based application.</div>
-							<a href="" target="_blank" class="items-product__button button button__small button button__small_green">Read
-								More</a>
+							<div class="item-roadMap__description">My Cloud OPS Manager</div>
 						</div>
-						<div class="items-product__item">
-							<div class="items-product__image-ibg_contain">
-								<img src="img/products/02.svg" alt="">
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.0.7</div>
+								<div class="item-roadMap__data">31.06.2022</div>
 							</div>
-							<div class="items-product__title">Our Service</div>
-							<div class="items-product__text">DSI’s shared service solutions focus on the front-end based
-								software development, designed specifically for the banking and financial sectors.
-							</div>
-							<a href="" target="_blank" class="items-product__button button button__small button__small_green">Read
-								More</a>
+							<div class="item-roadMap__description">iOS/Android My Cloud OPS Manager</div>
 						</div>
-						<div class="items-product__item">
-							<div class="items-product__image-ibg_contain">
-								<img src="img/products/03.svg" alt="">
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.0.8</div>
+								<div class="item-roadMap__data">31.06.2022</div>
 							</div>
-							<div class="items-product__title">Our Technology</div>
-							<div class="items-product__text">First JAVA, runs on more than 850 million personal
-								computers worldwide, and on billions of devices worldwide, including mobile and TV
-								devices.</div>
-							<a href="" target="_blank" class="items-product__button button button__small button button__small_green">Read
-								More</a>
+							<div class="item-roadMap__description">Web Your AWS Cloud</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.0.9</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">iOS/Android Web Your AWS Cloud</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.1.0</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">Web Your Google Cloud</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.1.1</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">Web Your Azure Cloud</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.1.2</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">Web Your DigitalOcean Cloud</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.1.3</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">iOS/Android AWS/Google/Azure/DO</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.1.4</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">Production Notes</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.1.4</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">First web version with Atlas</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.1.5</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">First web version with Atlas</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.1.6</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">First web version with Atlas</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.1.7</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">First web version with Atlas</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.1.8</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">First web version with Atlas</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.1.9</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">First web version with Atlas</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.2.0</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">First web version with Atlas</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.2.1</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">First web version with Atlas</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.2.2</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">First web version with Atlas</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.2.3</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">First web version with Atlas</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.2.4</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">First web version with Atlas</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.2.5</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">First web version with Atlas</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.2.6</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">First web version with Atlas</div>
+						</div>
+						<div class="roadMap__item item-roadMap">
+							<div class="item-roadMap__body">
+								<div class="item-roadMap__version">version 0.2.7</div>
+								<div class="item-roadMap__data">31.06.2022</div>
+							</div>
+							<div class="item-roadMap__description">First web version with Atlas</div>
 						</div>
 					</div>
 				</div>
@@ -254,7 +356,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220619135035"></script>
+	<script src="js/app.min.js?_v=20220619175235"></script>
 </body>
 
 </html>

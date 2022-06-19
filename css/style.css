@@ -1150,6 +1150,145 @@ body {
       align-self: flex-start;
 }
 
+@supports (padding-bottom: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem )) {
+  .roadMap {
+    padding-bottom: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem );
+  }
+}
+
+@supports not (padding-bottom: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem )) {
+  .roadMap {
+    padding-bottom: calc(0.625rem + 2.5 * (100vw - 20rem) / 52.1875);
+  }
+}
+
+@supports (padding-top: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem )) {
+  .roadMap {
+    padding-top: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem );
+  }
+}
+
+@supports not (padding-top: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem )) {
+  .roadMap {
+    padding-top: calc(0.625rem + 2.5 * (100vw - 20rem) / 52.1875);
+  }
+}
+
+.roadMap__container {
+  border: 2px solid #30444e;
+}
+
+.roadMap__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 133.69%;
+  text-align: center;
+  color: #1f2e35;
+}
+
+@supports (padding-top: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem )) {
+  .roadMap__title {
+    padding-top: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem );
+  }
+}
+
+@supports not (padding-top: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem )) {
+  .roadMap__title {
+    padding-top: calc(0.625rem + 2.5 * (100vw - 20rem) / 52.1875);
+  }
+}
+
+@supports (margin-bottom: clamp( 1.875rem , 1.3959580838rem  +  2.3952095808vw , 3.125rem )) {
+  .roadMap__title:not(:last-child) {
+    margin-bottom: clamp( 1.875rem , 1.3959580838rem  +  2.3952095808vw , 3.125rem );
+  }
+}
+
+@supports not (margin-bottom: clamp( 1.875rem , 1.3959580838rem  +  2.3952095808vw , 3.125rem )) {
+  .roadMap__title:not(:last-child) {
+    margin-bottom: calc(1.875rem + 1.25 * (100vw - 20rem) / 52.1875);
+  }
+}
+
+.roadMap__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 25px;
+     -moz-column-gap: 25px;
+          column-gap: 25px;
+  row-gap: 25px;
+}
+
+@supports (padding-bottom: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem )) {
+  .roadMap__items {
+    padding-bottom: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem );
+  }
+}
+
+@supports not (padding-bottom: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem )) {
+  .roadMap__items {
+    padding-bottom: calc(0.625rem + 2.5 * (100vw - 20rem) / 52.1875);
+  }
+}
+
+.roadMap__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+}
+
+.item-roadMap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 1fr;
+  grid-template-columns: 35% 1fr;
+  gap: 10px;
+}
+
+.item-roadMap__body {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 5px;
+}
+
+.item-roadMap__version {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgb(140, 134, 134);
+  padding: 5px 8px;
+  border-radius: 20px;
+  color: white;
+}
+
+.item-roadMap__data {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.item-roadMap__description {
+  background-color: #02897a;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
 .swiper {
   overflow: hidden;
 }
@@ -1423,6 +1562,13 @@ body {
   }
 }
 
+@media (max-width: 69.375em) {
+  .roadMap__items {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 61.99875em) {
   .main-slider[data-fullscreen] {
     min-height: 0;
@@ -1598,6 +1744,11 @@ body {
   .body-welcom__text P {
     font-weight: 700;
     color: #000;
+  }
+
+  .roadMap__items {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
