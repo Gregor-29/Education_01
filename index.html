@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20220619182716">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220621004803">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +32,8 @@
 						<ul class="menu__list">
 							<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
 							<li class="menu__item"><a href="roadMap.html" class="menu__link">Roadmap</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Contacts</a>
+							<li class="menu__item">
+								<a href="" class="menu__link">Contacts</a>
 							</li>
 							<li class="menu__item"><a href="" class="menu__link">Donate</a></li>
 							<li class="menu__item"><a href="https://gitlab.com/mongodb.tech/site" target="_blank" class="menu__link menu__link_gitLab">GitLab</a></li>
@@ -119,8 +120,8 @@
 							<div class="items-product__title">Our Product</div>
 							<div class="items-product__text">Our product is made on the base of our team’s careful
 								research and analyses, ranging from internet based application.</div>
-							<a href="" target="_blank" class="items-product__button button button__small button button__small_green">Read
-								More</a>
+							<button type="button" data-popup="#item_01" class="items-product__button button button__small button__small_green">Read
+								More</button>
 						</div>
 						<div class="items-product__item">
 							<div class="items-product__image-ibg_contain">
@@ -130,8 +131,8 @@
 							<div class="items-product__text">DSI’s shared service solutions focus on the front-end based
 								software development, designed specifically for the banking and financial sectors.
 							</div>
-							<a href="" target="_blank" class="items-product__button button button__small button__small_green">Read
-								More</a>
+							<button type="button" data-popup="#item_02" class="items-product__button button button__small button__small_green">Read
+								More</button>
 						</div>
 						<div class="items-product__item">
 							<div class="items-product__image-ibg_contain">
@@ -141,8 +142,8 @@
 							<div class="items-product__text">First JAVA, runs on more than 850 million personal
 								computers worldwide, and on billions of devices worldwide, including mobile and TV
 								devices.</div>
-							<a href="" target="_blank" class="items-product__button button button__small button button__small_green">Read
-								More</a>
+							<button type="button" data-popup="#item_03" class="items-product__button button button__small button__small_green">Read
+								More</button>
 						</div>
 					</div>
 				</div>
@@ -150,7 +151,7 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<div data-spollers="767.98" class="spollers footer__contacts contacts">
+				<div id="contacts" data-spollers="767.98" class="spollers footer__contacts contacts">
 					<div class="spollers__item">
 						<button type="button" data-spoller class="spollers__title contacts__title">Contacts:</button>
 						<div class="spollers__body">
@@ -174,7 +175,7 @@
 						</div>
 					</div>
 				</div>
-				<div data-spollers="767.98" class="spollers footer__donate donate">
+				<div id="donate" data-spollers="767.98" class="spollers footer__donate donate">
 					<div class="spollers__item">
 						<button type="button" data-spoller class="spollers__title donate__title">Donate:</button>
 						<div class="spollers__body donate__body">
@@ -246,17 +247,43 @@
 				</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="item_01" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero aliquid rerum eaque animi,
+					suscipit quae eum rem sequi cumque nulla distinctio inventore ipsum molestias commodi esse dolor
+					dignissimos amet.
+				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20220619182716"></script>
+	<div id="item_02" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quod ea exercitationem reprehenderit
+					voluptas. Voluptas ea ab aperiam, quidem hic nemo culpa, sed magni impedit mollitia et deleniti natus
+					veniam.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="item_03" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt in quibusdam, magnam labore cum
+					incidunt aliquid a vero sed amet praesentium, doloribus dolore eaque quis alias rerum aperiam nisi
+					repellat!
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220621004803"></script>
 </body>
 
 </html>
