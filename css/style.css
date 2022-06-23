@@ -1335,24 +1335,36 @@ body::after {
       align-self: flex-start;
 }
 
+@supports (padding-top: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem )) {
+  .roadMap__container {
+    padding-top: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem );
+  }
+}
+
+@supports not (padding-top: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem )) {
+  .roadMap__container {
+    padding-top: calc(0.625rem + 2.5 * (100vw - 20rem) / 52.1875);
+  }
+}
+
+@supports (padding-bottom: clamp( 0.9375rem , 0.0991766467rem  +  4.1916167665vw , 3.125rem )) {
+  .roadMap__container {
+    padding-bottom: clamp( 0.9375rem , 0.0991766467rem  +  4.1916167665vw , 3.125rem );
+  }
+}
+
+@supports not (padding-bottom: clamp( 0.9375rem , 0.0991766467rem  +  4.1916167665vw , 3.125rem )) {
+  .roadMap__container {
+    padding-bottom: calc(0.9375rem + 2.1875 * (100vw - 20rem) / 52.1875);
+  }
+}
+
 .roadMap__title {
   font-weight: 500;
   font-size: 32px;
   line-height: 133.69%;
   text-align: center;
   color: #1f2e35;
-}
-
-@supports (padding-top: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem )) {
-  .roadMap__title {
-    padding-top: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem );
-  }
-}
-
-@supports not (padding-top: clamp( 0.625rem , -0.3330838323rem  +  4.7904191617vw , 3.125rem )) {
-  .roadMap__title {
-    padding-top: calc(0.625rem + 2.5 * (100vw - 20rem) / 52.1875);
-  }
 }
 
 @supports (margin-bottom: clamp( 1.875rem , 1.3959580838rem  +  2.3952095808vw , 3.125rem )) {
@@ -1418,6 +1430,10 @@ body::after {
 }
 
 .item-roadMap__version {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  white-space: nowrap;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
@@ -1468,9 +1484,21 @@ body::after {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   font-weight: 500;
-  font-size: 25px;
   line-height: 133.69%;
   color: #1f2e35;
+  font-size: 25px;
+}
+
+@supports (font-size: clamp( 1.25rem , 1.130239521rem  +  0.5988023952vw , 1.5625rem )) {
+  .item-roadMap__description {
+    font-size: clamp( 1.25rem , 1.130239521rem  +  0.5988023952vw , 1.5625rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.25rem , 1.130239521rem  +  0.5988023952vw , 1.5625rem )) {
+  .item-roadMap__description {
+    font-size: calc(1.25rem + 0.3125 * (100vw - 20rem) / 52.1875);
+  }
 }
 
 .swiper {
